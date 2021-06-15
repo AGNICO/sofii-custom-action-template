@@ -1,0 +1,33 @@
+{
+    "name": "agnico/sofii-custom-action-template",
+    "description": "A Sofii custom action.",
+    "keywords": [
+        "Sofii"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agnico\\SofiiCustomActionTemplate\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Agnico\\SofiiCustomActionTemplate\\CustomActionServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan sofii:custom_action agnico/sofii-custom-action-template --install"
+        ]
+    }
+}
