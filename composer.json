@@ -24,10 +24,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "scripts": {
-        "post-install-cmd": [
-            "php artisan sofii:custom_action agnico/sofii-custom-action-template --install"
-        ]
-    }
+    "prefer-stable": true
 }
